@@ -1,0 +1,54 @@
+<#assign base=request.contextPath />
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="${base}/static/js/bootstrap/bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" href="${base}/static/js/bootstrap/bootstrap3/css/bootstrap-theme.css">
+<link rel="stylesheet" href="${base}/static/js/bootstrap/bootstrap-table/bootstrap-table.css">
+<link rel="stylesheet" href="${base}/static/js/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+<!-- 引入fileinput的css -->
+<link type="text/css" rel="stylesheet" href="${base}/static/js/fileinput/css/fileinput.min.css" />
+<!-- 引入fileinput的css -->
+
+
+<!-- 引入ckplayer -->
+<script src="${base}/static/js/bootstrap/bootstrap3/jquery.min.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap3/js/bootstrap.js"></script>
+<script src="${base}/static/js/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+<!-- 引入fileinput的js -->
+<script type="text/javascript" src="${base}/static/js/fileinput/js/fileinput.min.js"></script>
+<!--  引入fileinput的js -->         
+<script type="text/javascript" src="${base}/static/js/fileinput/js/locales/zh.js"></script>
+                       
+<script type="text/javascript" src="${base}/static/js/fileinput/themes/fa/theme.js"></script>
+
+</head>
+<body>
+	
+		<form id="add-bus-form" class="inline">
+		
+		<input type="hidden" name="id" value="${userBean.id}">
+		
+			
+					    <input type="text" name="name" value="${userBean.name}" id="uuid-busId">
+			
+					    <input type="radio" name="sex" value="1" ${userBean.hobby}=='1'?"checked":"">男
+					    <input type="radio" name="sex" value="2" ${userBean.hobby}=='2'?"checked":"">女
+		
+					    <input type="text" name="hobby" value="${userBean.hobby}">
+					   
+			
+					    <input type="text" name="nickname" value="${userBean.nickname}">
+					
+		</form>
+		
+		
+</body>
+</html>
